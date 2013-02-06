@@ -1,0 +1,23 @@
+###########
+# Printer #
+###########
+
+# Nach entsprechender Konfiguration kann mit der Taste (p) in Mutt gedruckt werden. 
+
+# Drucken mit Hilfe von MuttPrint dessen Systemweite Konfiguration
+# unter /etc/muttprintrc zu finden ist. 
+# User spezifische Konfigurationen muessen im Home Verzeichniss des
+# Users liegen. /home/ ~ /.muttprintrc
+#
+set print_command="muttprint"
+set print="yes"
+set print_split
+
+# Es sollen alle Headereintraege an den Druckdienst geschickt werden.
+# Hierzu sind diese 2 Macros zustaendig.
+#
+macro index p "<display-toggle-weed> <print-message> <display-toggle-weed> <exit>"
+macro pager p "<display-toggle-weed> <print-message> <display-toggle-weed>"
+
+
+

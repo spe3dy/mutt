@@ -1,0 +1,22 @@
+###########
+# SSL/TLS #
+###########
+
+#  Grundeinstellungen fuer Mutt
+
+# Es soll immer versucht werden SSL/TLS zu verwenden.
+#
+# set ssl_starttls=yes
+
+# Wuerde beim entfernen der Raute (#) eine bestimmte Version verwenden.
+#
+# TLS v.1
+ set ssl_use_tlsv1=yes
+#
+# SSL v.2
+# set ssl_use_sslv2=yes
+#
+# SSL v.3
+# set ssl_use_sslv3=yes
+# Wuerde SSL/TLS auf jeden Fall abschalten.
+set ssl_starttls=no 

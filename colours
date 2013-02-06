@@ -1,0 +1,112 @@
+##########
+# Farben #
+##########
+
+# black (schwarz)
+# blue (blau)
+# cyan (cyan)
+# green (gruen)
+# magenta (violett)
+# red (rot)
+# white (weiss)
+# yellow (gelb)
+#
+# default = Ist die Standardfarbe 
+# Bei einem Vordergrund kann bright (hell) vorangstellt werden. z.B. brightred
+
+
+# Farben vom Mail Header
+# Weiss auf Schwarz
+#
+color header white black ^From:
+color header white black ^Reply-To:
+color header white black ^To:
+color header white black ^Cc:
+color header white black ^Subject:
+color header white black ^Date:
+#
+# Wer auch diese beiden in weiss haben möchte, einfach die Rauten (#) entfernen.
+# Weiss auf Schwarz
+#
+# color header white black ^X-URL:
+# color header white black ^X-PGP-Key:
+
+
+# Alle Header Eintraege auf einmal eine Farbe geben würde so funktionieren.
+# Fettes Cyan auf Schwarz
+# 
+# color header brightcyan black .
+
+
+# URLs
+# Kommen in der Mail URLs, HTTP(S), FTP etc. vor, so werden diese Adressen in Gelb eingefärbt.
+# 
+color body yellow black (http|ftp|news|telnet|finger|ip|https)://[_a-zA-Z0-9\./~\-]+
+
+
+# Mailto-Links
+# Kommen Mailto-Links in der Mail vor, so wird dies in Gelb eingefärbt.
+#
+color body yellow black "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+
+
+# E-Mail Adressen
+# Mailadressen im Text werden ebenfalls Gelb dargestellt.
+#
+color body yellow black "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+
+
+# Gequoteten Texte
+# Gequoteter Text d.h. Reply > wird in Blau gezeigt.
+#
+color quoted blue black
+
+
+# Treemodus Farbe
+# In der Baumansicht ist der Tree/Baum in der Farbe Hellrot dargestellt.
+#
+color tree brightred black
+
+
+# Farben der Statusleiste oben und unten
+# Die zwei Leisten sind Blaum mit weisser Schrift.
+#
+color status white blue
+
+
+# Indicatorleiste
+# Coursorleiste ist Rot und der gewählte Eintrag zeigt Hellweisse Schrift.
+#
+color indicator brightwhite red
+
+
+# Mailanhaenge
+# Anhänge wie Bilder Text Dateien etc. wird in roter Farbe darauf hingewiessen.
+#
+color attachment red black
+
+
+# Signatur
+# Wird in normaler weisser Schrift dargestellt.
+#
+color signature white black
+
+# GPG/PGP
+#
+# Sollte GPG oder PGP verwendet werden, so werden hier entsprechende Zeilen eingefaerbt.
+# Signatur good = gruen
+# Signatur erstellt = gelb
+# Signatur schlecht = magenta
+# Signatur konnte nicht ueberprueft werden = magenta
+# Anfang u. Ende der Signatur sind rot wie Mailanhaenge
+# 
+color body green black "^gpg: Good signature.*"
+color body yellow black "^gpg: Signature made.*"
+color body magenta black "^gpg: BAD signature.*"
+color body magenta black "^gpg: Can't check signature.*"
+
+
+# Fehlermeldungen
+# Rote Schrift
+#
+color error red black

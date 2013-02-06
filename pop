@@ -1,0 +1,26 @@
+#############
+# POP Konto #
+#############
+
+# Konto 
+# Die Kontoeinstellungen des POP Kontos (Beispiel mit einem Strato Server)
+# Nach dem Start von Mutt, kann mit (G) das Konto abgerufen werden.
+#
+# Den Server ageben
+set pop_host="smtp.googlemail.com"
+#
+# Den Benutzernamen zum anmelden beim Mail Server
+set pop_user="username@gmail.com"
+#
+# Das Passwort vom Mailkonto
+set pop_pass="YourPassword"
+#
+# Check-Interval in Sekunden
+set pop_checkinterval=900
+#
+# Soll nach einer verlohrenen Verbindung ein erneuter Versuch unternommen werden.
+set pop_reconnect=yes
+# Authentifizierung
+set pop_authenticators="gssapi"
+set pop_authenticators="gssapi:cram-md5:digest-md5"
+

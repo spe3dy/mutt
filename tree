@@ -1,0 +1,13 @@
+##############
+# Tree-Modus #
+##############
+
+# Tree-Modus wird eingeschaltet.
+# Das ist die Art Baumansicht der Mails mit Reply Mails etc.
+#
+set sort=threads
+
+# Sortierte Darstellung nach Datum 
+#
+set sort_aux=date-sent
+

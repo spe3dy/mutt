@@ -1,0 +1,12 @@
+######################
+# Mail Versand MSMTP #
+######################
+
+# Anstelle von Fetch.- Send.- Mail wird MSMTP verwendet.
+# Hier wird Mutt also anstelle dem Sendmail Pfad, der zu MSMTP angegeben.
+# 
+# Eventuell muss dieser Pfad entsprechend angepasst werden, unter Debian sollte er wie hier
+# gezeigt richtig sein. ( Stand 9/2007 Lenny/Testing )
+#
+ set sendmail="/usr/bin/msmtp"
+

@@ -1,0 +1,36 @@
+##############
+# IMAP Konto #
+##############
+
+# Konto 
+# Die Kontoeinstellungen des IMAP Kontos (Beispiel mit einem Google Server)
+#
+# Der Server 
+set spoolfile={imap.googlemail.com}INBOX
+
+#
+# Fuer SSL ein /ssl beim Server mit einfuegen.
+# set spoolfile={googlemail.com/ssl}INBOX
+# set spoolfile={imap.googlemail.com/ssl}INBOX
+
+# Bezueglich SSL/TLS bitte zudem die Einstellungen in /home/<user>/.mutt/ssl ansehen.
+# Es kann vorkommen das man es in der einen Konfiguration on und in der anderen off hat.
+#
+# Inbox Folder
+set folder={imap.googlemail.com}INBOX
+#
+# User oder Benutzername für die Anmeldung auf dem Mail Server
+# set imap_user=username@gmail.de
+
+#
+# Passwort
+# set imap_pass="YourPassword"
+
+#
+# Check-Interval in Sekunden
+set mail_check=900
+#
+# Authentifizierung
+# set imap_authenticators="gssapi"
+# set imap_authenticators="gssapi:cram-md5:digest-md5"
+

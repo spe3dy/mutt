@@ -1,0 +1,15 @@
+################
+# Datum - Zeit #
+################
+
+# Setzt das Datumsformat
+#
+set date_format="%a, %b %d %H:%M"
+
+# Datumsformat im Index
+#
+set index_format="%4C %Z %D %-22.22F (%?l?%4l&%4c?) %s"
+
+# Datumsformat für Folder
+#
+set folder_format="%2C %8s %d %t %N %f"

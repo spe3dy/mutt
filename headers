@@ -1,0 +1,41 @@
+###########
+# Headers #
+###########
+
+# Eigene Headerzeilen
+#
+my_hdr From: User Name <username@gmail.com>
+my_hdr Reply-To: User Name <username@gmail.de>
+my_hdr X-URL: http://www.yourname.de
+my_hdr X-Operating-System: Debian GNU/`uname -s` `cat /etc/debian_version` (Kernel `uname -r`)
+
+# Die Headerzeilen koennen im Editor beim schreiben der Mail editirt werden.
+#
+set edit_hdrs
+
+# Alle Headereintraege ignorieren und bestimmte anschalten
+#
+# ignore *
+# unignore subject to from cc date 
+
+# Bei meinem unignore Eintrag sollen zuerst keine Header ignoriert werden, das Sternchen (*) bedeutet (all) sind 
+# wie jetzt in diesem Beispiel zuerst einmal nicht zu ignorieren. In der Späteren Auswahl werden dann nur 
+# bestimmte ignoriert.
+#
+unignore *
+
+# Hier werden alle zu ignorierende Headers eingetragen.
+#
+ignore X-Delivery-Time X-UID Message-ID MIME-Version Content-Disposition
+ignore X-RZG-AUTH X-RZG-CLASS-ID X-Priority X-MSMail-Priority
+ignore X-RZG-FWD-BY X-bounce-key X-Spam-Status X-Virus-Scanned
+ignore X-Spam-Level X-Rc-Virus X-Rc-Spam Resent-Message-ID
+ignore Received X-oemPro-MsgId X-oemPro-CSID Priority thread-index
+ignore x-m1-userid x-m1-type x-m1-dispatchid x-m1-outboundserver
+ignore x-m1-objectid Precedence Delivered-To X-No-Archive
+ignore X-sitepackage-domain X-sitepackage-id_ausgabe
+ignore X-eC-messenger-email X-eC-messenger-cid
+ignore X-eC-messenger-mid X-eC-messenger-sender-domain
+ignore X-BeenThere X-List-Administrivia X-P49_CLIENT_PK
+ignore X-mpm X-BitDefender-Scanner X-Antivirus
+ignore Importance X-Broadcast-Id 

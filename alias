@@ -1,0 +1,15 @@
+# Adressbuch #
+##############
+
+# Hier befinden sich die Einträge der Kontakte.
+#
+# Aliasname | Name | eMailAdresse |
+#
+# Das Adressbuch wird in Mutt mit der Taste (a) aufgerufen, dort können Adressen eingetragen
+# werden, oder man editiert diese Datei von Hand.
+# Zum schreiben einer neuen Mail Taste (m) drücken und bei der Angabe der Adresse entweder den
+# kürzeren Aliasnamen aus dem Adressbuch wählen oder die TAB-Taste drücken um durchs Adressbuch
+# zu scrollen
+#
+alias Friend User Name <user@name.com>
+
