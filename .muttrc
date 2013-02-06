@@ -1,0 +1,72 @@
+set imap_user = "username@gmail.com"
+set imap_pass = "YourPassword"
+
+set smtp_url = "smtp://username81@smtp.gmail.com:587/"
+set smtp_pass = "Yourpassword"
+set from = "username@gmail.com"
+set realname = "Your Name"
+
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed="+[Gmail]/Drafts"
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+set move = no
+
+# Editor
+# Wählt den Editor aus mit welchem Mails geschrieben werden. Beispiel: nano, vi, vim, emacs etc.
+set editor="vi"
+
+# Farben 
+# Stellt die verschiedenen Farben ein.
+source ~/.mutt/colours
+
+# Adressbuch 
+# Ermöglicht die verwendung eines kleinen Adressbuches bei diesem die Adressen in einer 
+# seperaten Datei abgespeichert werden. Ansonsten speichert Mutt die Adressen default in 
+# seine >.muttrc< Konfigurationsdatei.
+#
+# Eigene Aliasdatei verwenden
+set alias_file=~/.mutt/alias
+#
+# Aliasdatei einlesen, damit die Adressen gleich bekannt sind
+source ~/.mutt/alias
+#
+# Namen zu Adressen ueber die Aliasliste suchen und anzeigen
+set reverse_alias
+
+# ABOOK Adressbuch
+# Wer das Textbesierte Adressbuch ''abook'' verwendet, kann von diesem aus auch beim wählen eines
+# Kontaktes Mutt mit der entsprechenden eMail Adresse öffnen lassen. Hierzu den Kontakt wählen und die Taste (m) drücken.
+# Zudem ist es möglich von Mutt aus mit der Suche auf die eMail Adressdaten von ''abook'' zuzugreifen.
+# Hierzu sind bei paar Zeilen zu aktivieren.
+#
+# Wenn man in Mutt die Taste (Q) verwendet, kann man so nach Adressen in ''abook'' suchen lassen.
+# Zudem lassen sich ganz einfach durch drücken von (A) die eMail Adresse einer Mail so in der ''abook'' eintragen.
+#
+# set query_command ="abook --mutt-query '%s'"
+# macro generic,index,pager \ca "<shell-escape>abook<return>" "launch abook"
+# macro index,pager A "<pipe-message>abook --add-email<return>" "add the sender address to abook"
+
+
+# Signatur
+# Die Signatur ist ein Text welcher automatisch beim schreiben einer Mail an deren Ende 
+# als Text angehaengt wird. Eine Moeglichkeit waere hier zum Beispiel: Viele Gruesse,
+# Tschuess, Gruss, Bey... etc. um dieses nicht immer wieder schreiben zu muessen.
+#
+set signature ="~/.mutt/signatur"
+
+
+# Smilies im Titel der Mail nicht als Quoteebene interpretieren
+#
+set smileys="(>From )|(:[-^]?[][)(><}{|/DP])"
+
+# 6 Zeiliger Pager-Index
+# Zeit sechs Zeilen des Index, und darunter wie Art Vorschau den Inhalt
+# der Mails. Hierzu die ensprechende Zeile aktivieren in dem die Raute # 
+# entfert wird. Die Zahl kann natuerlich angepasst werden. Wie das am
+# Ende auf dem Monitor ausschaut, siehe unten Screenshot.
+ set pager_index_lines=6
